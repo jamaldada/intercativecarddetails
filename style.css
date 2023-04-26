@@ -1,0 +1,297 @@
+@import url(https://fonts.google.com/specimen/Space+Grotesk);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/bg-main-desktop.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.containerwhole {
+  display: flex;
+}
+
+.images {
+  margin-top: 7rem;
+  margin-left: 8rem;
+}
+.imgfront {
+}
+.imgback {
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+.cardname,
+.cardnumber {
+  display: flex;
+  flex-direction: column;
+}
+
+#cardnameinput,
+#cardno {
+  width: 50%;
+  height: 30px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+#cardnameinput,
+#cardno::placeholder {
+  font-size: 12px;
+  padding: 0.3rem;
+}
+
+.carddate {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.3rem;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-120%);
+}
+
+#expinumberone {
+  width: 20%;
+  height: 30px;
+}
+
+#expinumbertwo {
+  width: 20%;
+  height: 30px;
+}
+
+#expiry-date {
+  width: 64%;
+  height: 30px;
+}
+
+#expinumberone,
+#expinumbertwo,
+#expiry-date::placeholder {
+  padding: 0.3rem;
+}
+
+.btnconfirm {
+  width: 50%;
+  margin-top: 0.3rem;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border-style: none;
+  height: 30px;
+  font-size: 10px;
+  border-radius: 2px;
+}
+
+.container1 {
+  font-size: 12px;
+  margin-top: 15rem;
+  margin-left: 5rem;
+  display: ;
+}
+
+.container2 {
+  margin-top: 15rem;
+  margin-left: 5rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  margin-bottom: 1rem;
+}
+
+.htgratitude {
+  margin-bottom: 0.3rem;
+}
+
+.review {
+  margin-bottom: 1rem;
+}
+
+.continue {
+  width: 120%;
+  margin-top: 0.3rem;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border-style: none;
+  height: 30px;
+  font-size: 10px;
+  border-radius: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+.imgo {
+  transform: translateX(280%);
+  margin-top: 8.3rem;
+}
+
+.cardio {
+  border: none;
+  background-color: none;
+  transform: translate(68%, -1800%);
+  color: white;
+  width: 25%;
+  text-align: center;
+
+  height: auto;
+}
+
+.namio {
+  background-color: none;
+  border: none;
+  transform: translate(110%, -1200%);
+  width: 15%;
+  color: white;
+  padding: 0.2rem;
+}
+
+.datio {
+  background-color: none;
+  border: none;
+  transform: translate(550%, -1270%);
+  width: 7%;
+  color: white;
+  padding: 0.2rem;
+}
+
+.datitwo {
+  background-color: none;
+  border: none;
+  transform: translate(570%, -1370%);
+  width: 7%;
+  color: white;
+  padding: 0.2rem;
+}
+
+.cvco {
+  background-color: none;
+  border: none;
+  transform: translate(560%, -825%);
+  width: 7%;
+  color: white;
+  text-align: right;
+  padding: 0.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url(/images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .containerwhole {
+    flex-direction: column;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -9rem;
+    transform: translate(-40%, 0%);
+  }
+
+  .imgfront {
+    margin-top: -5rem;
+    width: 70%;
+  }
+
+  .imgback {
+  }
+  .imgf {
+    width: 300px;
+    transform: translateY(-6%);
+  }
+
+  .imgb {
+    width: 300px;
+  }
+  .cardio {
+    transform: translate(8%, -2700%);
+    border: none;
+    color: white;
+    width: 70%;
+  }
+
+  .namio {
+    transform: translate(20%, -2000%);
+    background-color: none;
+    width: 40%;
+  }
+
+  .imgo {
+    transform: translate(40%, -30%);
+    border: none;
+    z-index: 1;
+    width: 20%;
+  }
+
+  .imglogo {
+    width: 50px;
+  }
+
+  .datio {
+    border: none;
+    color: white;
+    width: 50px;
+    transform: translate(500%, -2100%);
+  }
+  .datitwo {
+    border: none;
+    color: white;
+    width: 50px;
+    transform: translate(547%, -2195%);
+  }
+
+  .continue {
+    width: 100%;
+  }
+  .container2 {
+    margin: 122px auto;
+  }
+
+  #cardnameinput,
+  #cardno {
+    width: 80%;
+  }
+
+  #expinumberone {
+    width: 26%;
+  }
+  #expinumbertwo {
+    width: 26%;
+    margin-right: 2rem;
+  }
+
+  #expiry-date {
+    width: 143%;
+    margin-left: rem;
+  }
+
+  input#expiry-date {
+    margin-right: -2rem;
+  }
+  .btnconfirm {
+    width: 80%;
+  }
+
+  .cvco {
+    color: white;
+    transform: translate(1170%, -2735%);
+  }
+}
